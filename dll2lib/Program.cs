@@ -146,7 +146,7 @@ namespace dll2lib
 
         private static void RunLib(string defpath, string libpath)
         {
-            var procinfo = new ProcessStartInfo("lib", string.Format("/machine:arm /def:{0} /out:{1}", defpath, libpath));
+            var procinfo = new ProcessStartInfo("lib", string.Format("/machine:x86 /def:{0} /out:{1}", defpath, libpath));
             procinfo.UseShellExecute = false;
             var lib = Process.Start(procinfo);
             lib.WaitForExit();
