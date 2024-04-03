@@ -12,11 +12,11 @@ Requires `dumpbin.exe` and `lib.exe` in `%PATH%`. It is easiest to run from the 
 For ease of use, a pre-built binary is provided in `dll2lib\bin\Release`, however feel free to build your own.
 
 ```
-    dll2lib.exe <options> <dll>
+dll2lib.exe <options> <dll>
 
-    Options:
+Options:
 
-        /NOCLEAN        don't delete intermediate files
+    /NOCLEAN    don't delete intermediate files
 ```
 
 The import library file is output to the same directory as the target dll.
@@ -31,5 +31,5 @@ Requirements:
 Open the .sln and hit build, or build from Visual Studio tools command prompt:
 
 ```
-    msbuild /p:Configuration=Release
+msbuild /p:Configuration=Release
 ```
